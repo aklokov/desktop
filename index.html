@@ -1,9 +1,40 @@
 <html>
-  
+
 <head>
     <title>Desktop</title>
+    <style>
+        --shortcutIconSize: 64px;
+        shortcut {
+            display: block;
+            width: var(--shortcutIconSize);
+            height:  var(--shortcutIconSize);
+        }
+    </style>
+    <script>
+        let desktopData = [
+            {
+                icon: "computer",
+                url: "goole.com"
+            }
+        ]
+    </script>
+</head>
 
-</head>    <body>
-        
-    </body>
+<body>
+    <toolbar>
+        <button>
+            start
+        </button>
+    </toolbar>
+    <desktop>
+        <shortcut data="desktopData">
+            <a href="data.url">
+                <img src="data.icon">
+            </a>
+        </shortcut>
+
+    </desktop>
+</body>
+
+
 </html>
